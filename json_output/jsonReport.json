@@ -1,0 +1,114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-04T07:02:51.386Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5527942700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.generatePlaceId()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify Delete Place functionality",
+        "description": "",
+        "id": "validating-add-place-(maps)-api;verify-delete-place-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7815200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Delete Place Payload",
+            "match": {
+              "location": "StepDefinitions.delete_Place_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 256782300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User calls \"deletePlaceAPI\" using \"DELETE\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinitions.user_calls_using_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1997300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User should get a valid response with response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 52
+                }
+              ],
+              "location": "StepDefinitions.user_should_get_a_valid_response_with_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17174000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Add Place (Maps) API",
+    "description": "",
+    "id": "validating-add-place-(maps)-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidation.feature",
+    "tags": []
+  }
+]

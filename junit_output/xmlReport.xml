@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="5.877567">
+<testcase classname="Validating Add Place (Maps) API" name="Verify Delete Place functionality" time="5.877567">
+<system-out><![CDATA[Given Delete Place Payload..................................................passed
+When User calls "deletePlaceAPI" using "DELETE" http request................passed
+Then User should get a valid response with response code 200................passed
+And "status" in response body is "OK".......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
